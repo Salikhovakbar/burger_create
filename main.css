@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+flex-direction: column;
+position: relative;
+}
+
+.burger-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin: auto;
+}
+.burger-top-bread{
+    height: 50px;
+    width: 100%;
+border-radius: 40px 40px 0 0;
+background-color: orange;
+}
+.burger-bottom-bread{
+    height: 50px;
+    width: 100%;
+border-radius: 0 0 40px 40px;
+background-color: orange;
+}
+.burger-ingrediants{
+    width: 100%;
+}
+.meat-box{
+    width: 100%;
+    height: 20px;
+    background-color: brown;
+border-radius: 20px;
+cursor: pointer;
+}
+.cheese-box{
+    height: 10px;
+    width: 100%;
+    background-color: gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cabbage-box{
+    height: 15px;
+    width: 100%;
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+.btn-wrapper > button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+cursor: pointer;
+}
+.btn-cheese{
+    background-color: gold;
+    color: white;
+}
+.btn-meat{
+    background-color: red;
+    color: white;
+}
+.cabbage-btn{
+    background-color: green;
+    color: white;
+}
+.btn-meat:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 3px brown;
+}
+.btn-cheese:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 3px orange;
+}
+.cabbage-btn:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 3px chartreuse;
+}
+.logo{
+    position: absolute;
+right: 0;
+bottom: 0;
+width: 30px;
+height: 30px;
+}
+.logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+h1{
+    animation-name: burger;
+    animation-duration: 5s;
+    animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+@keyframes burger {
+    20%{
+        color: dodgerblue;
+    }
+    50%{
+        color: red;
+    }
+    70%{
+        color: gold;
+    }
+    100%{
+        color: green;
+    }
+}
