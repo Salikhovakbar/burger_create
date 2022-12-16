@@ -2,6 +2,8 @@ const burgerSpices = document.querySelector(".burger-ingrediants")
 const btnCheese = document.querySelector(".btn-cheese")
 const btnMeat = document.querySelector(".btn-meat")
 const btnCabbage = document.querySelector(".cabbage-btn")
+const pepsi = document.querySelector(".liquid")
+let pepsiLevel = 0
 btnMeat.addEventListener('click', () => {
     window.scrollTo(0, document.body.scrollHeight);
     const meatBox = document.createElement("div")
@@ -28,4 +30,16 @@ btnCabbage.addEventListener('click', () => {
     cabbageBox.addEventListener('click', () => {
         cabbageBox.remove()
     } )
+})
+function drink(){
+    if(pepsiLevel < 100){
+        pepsiLevel=pepsiLevel + 1
+        pepsi.style.height = pepsiLevel + 'px'
+    }
+    else{
+        pepsiLevel = 100
+    }
+}
+document.querySelector(".drink-box").addEventListener('click', () => {
+setInterval(drink, 100)
 })

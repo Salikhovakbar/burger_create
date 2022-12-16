@@ -116,3 +116,28 @@ animation-iteration-count: infinite;
         color: green;
     }
 }
+.drink-box{
+    height: 100px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+border: 2px solid dodgerblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+}
+.pepsi{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    color: red;
+    background-color: dodgerblue;
+}
+.liquid{
+    width: 100%;
+    height: 0;
+    background-color: black;
+align-self: flex-end;
+}
